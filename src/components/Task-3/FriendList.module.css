@@ -1,0 +1,43 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: -20px;
+}
+
+.item {
+  width: 250px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  border: 1px solid slategray;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px 1px black;
+}
+
+.status {
+  margin-right: 10px;
+  margin-left: 15px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+.statusRed {
+  composes: status;
+  background-color: green;
+}
+
+.statusGreen {
+  composes: status;
+  background-color: red;
+}
+
+.avatar {
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.name {
+}

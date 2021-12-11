@@ -3,28 +3,28 @@ import styles from "./User.module.css";
 
 export default function User({ username, tag, location, avatar, stats }) {
   return (
-    <div className="profile">
-      <div className="description">
-        <img src={avatar} alt={tag} className="avatar" />
-        <p className="name">{username}</p>
-        <p className="tag">{tag}</p>
-        <p className="location">{location}</p>
-      </div>
+    <div className={styles.card}>
+      <img src={avatar} alt={tag} className="avatar" />
+      <div className={styles.info}>
+        <p className={styles.name}>{username}</p>
+        <p className={styles.tag}>{tag}</p>
+        <p className={styles.location}>{location}</p>
 
-      <ul className="stats">
-        <li>
-          <span className="label">Followers </span>
-          <span className="quantity">{stats.followers}</span>
-        </li>
-        <li>
-          <span className="label">Views </span>
-          <span className="quantity">{stats.views}</span>
-        </li>
-        <li>
-          <span className="label">Likes </span>
-          <span className="quantity">{stats.likes}</span>
-        </li>
-      </ul>
+        <ul className={styles.stats}>
+          <li>
+            <span className="label">Followers </span>
+            <span className="quantity">{stats.followers}</span>
+          </li>
+          <li>
+            <span className="label">Views </span>
+            <span className="quantity">{stats.views}</span>
+          </li>
+          <li>
+            <span className="label">Likes </span>
+            <span className="quantity">{stats.likes}</span>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }

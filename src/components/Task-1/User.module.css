@@ -1,0 +1,42 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.info {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.tag {
+  text-align: center;
+  color: slategray;
+  margin-bottom: 5px;
+}
+
+.location {
+  color: slategray;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+}
+
+.stats li {
+  width: 75px;
+  text-align: center;
+  border: 1px solid slategray;
+  border-radius: 4px;
+  color: slategray;
+}
