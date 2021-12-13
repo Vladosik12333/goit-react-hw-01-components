@@ -1,7 +1,7 @@
 import propTypes from "prop-types";
-import styles from "./FriendList.module.css";
+import styles from "./FriendListItem.module.css";
 
-export function FriendListItem({ avatar, name, isOnline }) {
+export default function FriendListItem({ avatar, name, isOnline }) {
   return (
     <li className={styles.item}>
       <span className={isOnline ? styles.statusRed : styles.statusGreen}></span>
