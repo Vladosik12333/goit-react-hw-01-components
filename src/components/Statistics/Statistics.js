@@ -1,21 +1,21 @@
 import propTypes from "prop-types";
-import styles from "./Statistics.module.css";
+import { Section, Title, List, ItemList, Label } from "./Statistics.styled.jsx";
 
 export default function Statistics({ title, stats }) {
   return (
-    <section className={styles.statistics}>
-      {title && <h2 className="title">{title}</h2>}
-      <ul className={styles.list}>
+    <Section>
+      {title && <Title>{title}</Title>}
+      <List>
         {stats.map(({ id, label, percentage }) => {
           return (
-            <li key={id} className={styles.item}>
-              <span className="label">{label} </span>
-              <span className="percentage">{percentage} </span>
-            </li>
+            <ItemList key={id}>
+              <Label>{label} </Label>
+              <Label>{percentage} </Label>
+            </ItemList>
           );
         })}
-      </ul>
-    </section>
+      </List>
+    </Section>
   );
 }
 
